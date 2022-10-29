@@ -10,7 +10,7 @@ function sumarParesImpares(array) {
   
     pares.forEach((el) => {
       if (typeof el !== "number") return console.error(`${el} no es un número`);
-      resultPares = resultPares + el;
+      resultPares += el;
     });
   
     let impares = array.filter((n) => n % 2 === 1);
@@ -21,7 +21,7 @@ function sumarParesImpares(array) {
         return console.error(
           `${el} no es un número, por lo tanto se excluirá de la suma`
         );
-      resultImpares = resultImpares + el;
+      resultImpares += el;
     });
   
     return `La suma de todos los números impares del arreglo es: ${resultImpares}\n La suma de todos los números pares del arreglo es: ${resultPares}`;
