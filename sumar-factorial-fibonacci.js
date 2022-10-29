@@ -1,3 +1,8 @@
+// Este ejercicio consta de 3 funciones, factorial(n) recibe el número del cual se desea calcular el Factorial
+// fibonacci(n) recibe el número hasta el cual desea recibir un array con su sucesión de Fibonacci
+// sumarFactorialFibonacci(valFact, valFib) recibe como 1er parámetro el valor de factorial(n)
+// y como 2do parámetro el valor de fibonacci(n) y retorna la suma de ambos resultados
+
 function factorial (n) {
     if (typeof n !== 'number' || n < 0) return `${n} debe ser un número positivo`
     let resultFact = 1
